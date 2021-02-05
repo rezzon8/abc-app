@@ -3,15 +3,20 @@
     <div>
       <img
         alt="Equal Experts Logo"
-        src="https://www.equalexperts.com/wp-content/themes/equalexperts/assets/logo.svg"
+        src="./assets/logo.svg"
         class="animate__animated animate__tada animate__delay-1s"
       />
     </div>
+    <h1>The Simple Shopping Cart</h1>
     <ShoppingCart />
   </div>
 </template>
 
 <script>
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min";
+import "animate.css/animate.css";
+import "material-icons/iconfont/material-icons.css";
 import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
@@ -27,11 +32,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  padding-top: 2rem;
   color: #fff;
 }
 
 img {
-  width: 13rem;
+  width: 23.5rem;
 }
 
 #nav {

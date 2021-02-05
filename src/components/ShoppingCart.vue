@@ -2,12 +2,16 @@
   <div class="hello">
     <ul>
       <li v-for="(item, index) in products" :key="index">
-        <button :class="`add-${item.slug}`" @click="addToCart(item)">
+        <button
+          :class="`add-${item.slug}`"
+          class="btn waves-effect waves-light input-btn"
+          @click="addToCart(item)"
+        >
           {{ item.name }} - R{{ item.price }}
         </button>
       </li>
     </ul>
-    <ul>
+    <ul class="cart">
       <template v-if="cart.length > 0">
         <li
           v-for="(item, index) in cart"
@@ -15,6 +19,13 @@
           :class="`item-${item.slug}-${index}`"
         >
           {{ item.name }} - R{{ item.price }}
+          <button
+            :class="`remove-${item.slug}`"
+            class="btn waves-effect waves-light input-btn"
+            @click="removeItem(item)"
+          >
+            <i class="material-icons">remove</i>
+          </button>
         </li>
       </template>
       <template v-else>
@@ -47,6 +58,9 @@ export default {
   methods: {
     addToCart(item) {
       return this.cart.push(item);
+    },
+    removeItem(item) {
+      return this.cart.pop(item);
     }
   },
   computed: {
@@ -71,6 +85,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.cart li {
+  font-size: 2rem !important;
+}
+h1 {
+  color: #fed800;
+}
+.btn.input-btn {
+  color: #fff;
+  background-color: #095e88;
+  font-weight: bold;
+}
 h3 {
   margin: 40px 0 0;
 }

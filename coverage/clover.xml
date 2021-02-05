@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612461519152" clover="3.2.0">
-  <project timestamp="1612461519152" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="16" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
-    <file name="HelloWorld.vue" path="/Projects/abc-app/src/components/HelloWorld.vue">
-      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <line num="34" count="6" type="stmt"/>
-      <line num="46" count="16" type="stmt"/>
-      <line num="51" count="12" type="stmt"/>
-      <line num="52" count="12" type="stmt"/>
-      <line num="53" count="22" type="stmt"/>
-      <line num="55" count="12" type="stmt"/>
-      <line num="58" count="11" type="stmt"/>
-      <line num="59" count="11" type="stmt"/>
-      <line num="60" count="11" type="stmt"/>
-      <line num="63" count="11" type="stmt"/>
+<coverage generated="1612500771319" clover="3.2.0">
+  <project timestamp="1612500771319" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6" elements="18" coveredelements="16" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="ShoppingCart.vue" path="/Projects/abc-app/src/components/ShoppingCart.vue">
+      <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6"/>
+      <line num="48" count="7" type="stmt"/>
+      <line num="60" count="16" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="68" count="13" type="stmt"/>
+      <line num="69" count="13" type="stmt"/>
+      <line num="70" count="22" type="stmt"/>
+      <line num="72" count="13" type="stmt"/>
+      <line num="75" count="12" type="stmt"/>
+      <line num="76" count="12" type="stmt"/>
+      <line num="77" count="12" type="stmt"/>
+      <line num="80" count="12" type="stmt"/>
     </file>
   </project>
 </coverage>

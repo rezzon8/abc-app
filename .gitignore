@@ -2,6 +2,7 @@
 node_modules
 /dist
 /coverage
+abc.code-workspace
 
 
 /tests/e2e/logs/
@@ -24,4 +25,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-abc.code-workspace
