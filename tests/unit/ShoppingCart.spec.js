@@ -1,7 +1,19 @@
 import { shallowMount } from "@vue/test-utils";
 import ShoppingCart from "@/components/ShoppingCart.vue";
 
+let wrapper;
+
+const factory = () => {
+  return shallowMount(ShoppingCart);
+};
+
 describe("ShoppingCart.vue", () => {
+  beforeEach(() => {
+    wrapper = factory();
+  });
+  afterEach(() => {
+    wrapper.destroy();
+  });
   it("should render", () => {
     const wrapper = shallowMount(ShoppingCart);
     expect(wrapper.exists()).toBe(true);

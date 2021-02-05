@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612501773828" clover="3.2.0">
-  <project timestamp="1612501773828" name="All files">
+<coverage generated="1612502084596" clover="3.2.0">
+  <project timestamp="1612502084596" name="All files">
     <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="18" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="ShoppingCart.vue" path="/Projects/abc-app/src/components/ShoppingCart.vue">
       <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-      <line num="48" count="8" type="stmt"/>
+      <line num="48" count="16" type="stmt"/>
       <line num="60" count="16" type="stmt"/>
       <line num="63" count="1" type="stmt"/>
-      <line num="68" count="15" type="stmt"/>
-      <line num="69" count="15" type="stmt"/>
+      <line num="68" count="23" type="stmt"/>
+      <line num="69" count="23" type="stmt"/>
       <line num="70" count="22" type="stmt"/>
-      <line num="72" count="15" type="stmt"/>
-      <line num="75" count="13" type="stmt"/>
-      <line num="76" count="13" type="stmt"/>
-      <line num="77" count="13" type="stmt"/>
-      <line num="80" count="13" type="stmt"/>
+      <line num="72" count="23" type="stmt"/>
+      <line num="75" count="21" type="stmt"/>
+      <line num="76" count="21" type="stmt"/>
+      <line num="77" count="21" type="stmt"/>
+      <line num="80" count="21" type="stmt"/>
     </file>
   </project>
 </coverage>
