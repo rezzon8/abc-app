@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingCart.vue should render 1`] = `
+<div class="hello">
+  <ul>
+    <li><button class="btn waves-effect waves-light input-btn add-dove-soap">
+        Dove Soap - R39.99
+      </button></li>
+    <li><button class="btn waves-effect waves-light input-btn add-axe-deo">
+        Axe - R99.99
+      </button></li>
+  </ul>
+  <ul class="cart">
+    <li>This cart is empty, why not spoil yourself?</li>
+  </ul>
+  <h2>price: R0.00</h2>
+  <h2>tax: R0.00</h2>
+  <h1>total: R0.00</h1>
+</div>
+`;

@@ -2,6 +2,11 @@ import { shallowMount } from "@vue/test-utils";
 import ShoppingCart from "@/components/ShoppingCart.vue";
 
 describe("ShoppingCart.vue", () => {
+  it("should render", () => {
+    const wrapper = shallowMount(ShoppingCart);
+    expect(wrapper.exists()).toBe(true);
+    expect(wrapper).toMatchSnapshot();
+  });
   it("should render 2 product items(buttons)", () => {
     const wrapper = shallowMount(ShoppingCart);
     expect(wrapper.findAll("button").length).toBe(2);
