@@ -7,7 +7,7 @@
         class="animate__animated animate__tada animate__delay-1s"
       />
     </div>
-    <h1>The Simple Shopping Cart</h1>
+    <p class="title">The Simple Shopping Cart</p>
     <ShoppingCart />
   </div>
 </template>
@@ -33,14 +33,20 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem;
   color: #fff;
 }
-
 img {
   width: 23.5rem;
 }
-
+h1,
+.title {
+  color: #fed800;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
 #nav {
   padding: 30px;
 

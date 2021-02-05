@@ -4,7 +4,7 @@
       <li v-for="(item, index) in products" :key="index">
         <button
           :class="`add-${item.slug}`"
-          class="btn waves-effect waves-light input-btn"
+          class="btn waves-effect waves-light input-btn btn-large"
           @click="addToCart(item)"
         >
           {{ item.name }} - R{{ item.price }}
@@ -21,7 +21,7 @@
           {{ item.name }} - R{{ item.price }}
           <button
             :class="`remove-${item.slug}`"
-            class="btn waves-effect waves-light input-btn"
+            class="btn waves-effect waves-light delete-btn btn-small"
             @click="removeItem(item)"
           >
             <i class="material-icons">remove</i>
@@ -32,9 +32,12 @@
         <li>This cart is empty, why not spoil yourself?</li>
       </template>
     </ul>
-    <h2>price: R{{ price }}</h2>
-    <h2>tax: R{{ tax }}</h2>
-    <h1>total: R{{ total }}</h1>
+    <div class="totals-output">
+      <h2>items: {{ cart.length }}</h2>
+      <h2>price: R{{ price }}</h2>
+      <h2>tax: R{{ tax }}</h2>
+      <h1>total: R{{ total }}</h1>
+    </div>
   </div>
 </template>
 
@@ -85,16 +88,30 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.cart {
+  margin-top: 3rem;
+}
 .cart li {
   font-size: 2rem !important;
-}
-h1 {
-  color: #fed800;
 }
 .btn.input-btn {
   color: #fff;
   background-color: #095e88;
   font-weight: bold;
+}
+.btn.delete-btn {
+  color: #095e88;
+  background-color: #fed800;
+  font-weight: bold;
+}
+.totals-output {
+  padding-top: 2.3rem;
+}
+.totals-output h1 {
+  line-height: 1.3rem;
+}
+.totals-output h2 {
+  line-height: 1.3rem;
 }
 h3 {
   margin: 40px 0 0;
