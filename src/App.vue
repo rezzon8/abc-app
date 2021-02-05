@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <div>
+      <img
+        alt="Equal Experts Logo"
+        src="https://www.equalexperts.com/wp-content/themes/equalexperts/assets/logo.svg"
+        class="animate__animated animate__tada animate__delay-1s"
+      />
+    </div>
     <ShoppingCart />
   </div>
 </template>
@@ -21,6 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
+}
+
+img {
+  width: 13rem;
 }
 
 #nav {
