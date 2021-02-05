@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/coverage
 
 
 /tests/e2e/logs/
@@ -23,3 +24,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+abc.code-workspace

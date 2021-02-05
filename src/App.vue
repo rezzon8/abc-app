@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <ShoppingCart />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
   components: {
-    HelloWorld
+    ShoppingCart
   }
 };
 </script>
@@ -20,7 +20,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
 }
 
 #nav {
