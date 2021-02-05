@@ -17,6 +17,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min";
 import "animate.css/animate.css";
 import "material-icons/iconfont/material-icons.css";
+
 import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
