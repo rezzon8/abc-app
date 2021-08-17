@@ -5,6 +5,7 @@
         <button
           :class="`add-${item.slug}`"
           class="btn waves-effect waves-light input-btn btn-large"
+          @keyDown="addToCart(item)"
           @click="addToCart(item)"
         >
           {{ item.name }} - R{{ item.price }}
@@ -22,6 +23,7 @@
           <button
             :class="`remove-${item.slug}`"
             class="btn waves-effect waves-light delete-btn btn-small"
+            @keyDown="removeItem(item)"
             @click="removeItem(item)"
           >
             <i class="material-icons">remove</i>
